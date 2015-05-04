@@ -5,10 +5,10 @@ ENT.PrintName = "Gas Collector"
 function ENT:Initialize()
 	self.BaseClass.Initialize(self)
 	if (self:GetSkin() == 3) then
-		self.PrintName = "Tritium Inverter"
+		self.PrintName = "Tritium Collector"
 		list.Set( "LSEntOverlayText" , "gas_collector", {HasOOO = true, num = 2, resnames = { "energy" }, genresnames = { "Tritium" } } )
 	elseif (self:GetSkin() == 2) then
-		self.PrintName = "Deuterium Collecotr"
+		self.PrintName = "Deuterium Collector"
 		list.Set( "LSEntOverlayText" , "gas_collector", {HasOOO = true, num = 2, resnames = { "energy" }, genresnames = { "Deuterium" } } )
 	elseif (self:GetSkin() == 0) then
 		self.PrintName = "Methane Collector"
